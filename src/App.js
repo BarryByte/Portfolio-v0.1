@@ -1,11 +1,17 @@
-import logo from './logo.svg';
 import './App.css';
-import Product from './product';
-
+import About from "./components/About";
+import Contact from "./components/Contact";
+import Navbar from "./components/Navbar";
+import Skills from "./components/Skills";
 function App() {
   return (
-    <div className="App"> 
-      <Product />
+    <div className='sections'>
+      <Navbar/>
+      <About/>
+
+      <Skills/>
+      <Contact/>
+      <p>This is a sample</p>
     </div>
   );
 }
