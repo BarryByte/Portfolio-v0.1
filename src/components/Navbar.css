@@ -8,7 +8,7 @@ nav span {
   align-items: center;
   font-family: "Merienda", cursive;
   font-optical-sizing: auto;
-  font-weight: 660  ;
+  font-weight: 660;
   font-style: normal;
   padding: 0 10%;
   font-size: 1.5rem;
@@ -25,6 +25,10 @@ nav span {
   margin: 0 15px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: 400;
+  font-family: "Merienda", cursive;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
 }
 
 .nav-item a {
@@ -44,4 +48,27 @@ nav span {
 
 .nav-item a:hover::after {
   width: 100%;
+}
+
+.home::before {
+  content: url('/src/assets/icons/home_24dp_FILL0_wght400_GRAD0_opsz24.svg');
+  width: 30px;
+  height: 20px;
+  margin-top: 2px;
+}
+
+.about::before {
+  content: url('/src/assets/icons/sensor_occupied_24dp_FILL0_wght400_GRAD0_opsz24.svg');
+  display: inline-block;
+  width: 30px;
+  height: 20px;
+  margin-top: 2px;
+}
+
+.project::before {
+  content: url('/src/assets/icons/developer_mode_tv_24dp_FILL0_wght400_GRAD0_opsz24.svg');
+}
+
+.resume::before {
+  content: url('/src/assets/icons/lab_profile_24dp_FILL0_wght400_GRAD0_opsz24.svg');
 }

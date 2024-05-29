@@ -19,6 +19,7 @@ function App() {
         deletingSpeed={50}
         duration={1000}
       />
+    <About/>
     </div>
   );
 }
