@@ -1,15 +1,23 @@
-import { useState, useEffect } from "react";
-import {Link} from "react-scroll"
-function Navbar(){
-    const[navActive , setNavActive] = useState(false);
-
-    const toggleNav = () => {
-        setNavActive(!navActive);
-    }
-    const closeMenu = () => {
-        setNavActive(false)
-    }
-    
-    
+import "./Navbar.css";
+function Navbar() {
+  return (
+    <nav>
+      <span> Abhay Raj</span>
+      <ul className="navbar">
+        <li className="nav-item ">
+          <a href="">Home</a>
+        </li>
+        <li className="nav-item ">
+          <a href="">About</a>
+        </li>
+        <li className="nav-item ">
+          <a href="">Project</a>
+        </li>
+        <li className="nav-item ">
+          <a href="">Resume</a>
+        </li>
+      </ul>
+    </nav>
+  );
 }
 export default Navbar;
