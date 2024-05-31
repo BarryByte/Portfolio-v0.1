@@ -4,5 +4,20 @@
   font-style: normal;
   font-size: 2.6rem;
   padding: 15% 0 0 15%;
+  max-width: 40%;
+  flex: 1;
+
 }
 
+.home{
+  display: flex;
+  
+
+}
+
+.home-img1{
+  height: 600px;
+  width: 600px;
+  margin-top: 50px;
+  
+}

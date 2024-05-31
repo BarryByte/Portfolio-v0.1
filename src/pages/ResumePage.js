@@ -1,14 +1,14 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
-import About from '../components/About';
 
-const AboutPage = () => {
+const ResumePage = () => {
   return (
     <div>
         <Navbar/>
-        <About />
+      <h1>Resume Page</h1>
+      <p>Welcome to the Resume Page</p>
     </div>
   );
 };
 
-export default AboutPage;
+export default ResumePage;

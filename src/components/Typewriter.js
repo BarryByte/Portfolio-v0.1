@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { useEffect } from "react";
-import "./Typewriter.css" ;
+import "./Typewriter.css";
+import myimage from "/home/barrybyte/projects/T-4/Portfolio-v0.1/src/assets/image-from-rawpixel-id-6728521-svg.svg";
+
 function Typewriter({
   text,
   typingSpeed = 400,
@@ -19,8 +21,7 @@ function Typewriter({
             (prev) => prev + text[index].charAt(displayText.length)
           );
         } else {
-          setTimeout(() =>setIsDeleting(true), duration )
-          
+          setTimeout(() => setIsDeleting(true), duration);
         }
       } else {
         if (displayText.length > 0) {
@@ -36,12 +37,29 @@ function Typewriter({
       handleTyping,
       isDeleting ? deletingSpeed : typingSpeed
     );
-    return clearTimeout()
-  },[displayText, isDeleting, index, text, typingSpeed, deletingSpeed, duration]);
+    return clearTimeout();
+  }, [
+    displayText,
+    isDeleting,
+    index,
+    text,
+    typingSpeed,
+    deletingSpeed,
+    duration
+  ]);
   return (
-    <div className="typing-effect">
-      {displayText}
-      <span className="caret">|</span>
+    <div className="home">
+      <div className="typing-effect">
+        <span className="const-text">Hi There!</span>
+        <br></br>
+        <span className="const-text">I'm Abhay Raj</span>
+        <br></br>
+        {displayText}
+        <span className="caret">|</span>
+      </div>
+      <div >
+        <img className="home-img1"src={myimage} alt="Sample image"/>
+      </div>
     </div>
   );
 }
