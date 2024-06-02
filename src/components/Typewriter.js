@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import "./Typewriter.css";
-import myimage from "/home/barrybyte/projects/T-4/Portfolio-v0.1/src/assets/image-from-rawpixel-id-6728521-svg.svg";
+import myimage from "../assets/image-from-rawpixel-id-6728521-svg.svg";
 
 function Typewriter({ text, typingSpeed = 400, deletingSpeed = 50, duration = 1000 }) {
   const [displayText, setDisplayText] = useState("");
