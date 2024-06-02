@@ -7,18 +7,14 @@ body {
   -moz-osx-font-smoothing: grayscale;
   font-size: 16px;
   color: #ffffff;
-  background-color: #431F47;
+  background-color: #FFFAE6;
 }
 
 h1, h2, h3, h4, h5, h6, p {
   margin: 0;
 }
 
-:root {
-  --primary: #ffffff;  /* White */
-  --white: #9067C6; /* Purple */
-  --border: #431F47; /* Dark Purple */
-}
+
 
 .btn {
   font-family: "Roboto", sans-serif;

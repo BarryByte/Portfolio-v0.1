@@ -1,14 +1,8 @@
-import { useState } from "react";
-import { useEffect } from "react";
+import { useState, useEffect } from "react";
 import "./Typewriter.css";
 import myimage from "/home/barrybyte/projects/T-4/Portfolio-v0.1/src/assets/image-from-rawpixel-id-6728521-svg.svg";
 
-function Typewriter({
-  text,
-  typingSpeed = 400,
-  deletingSpeed = 50,
-  duration = 1000
-}) {
+function Typewriter({ text, typingSpeed = 400, deletingSpeed = 50, duration = 1000 }) {
   const [displayText, setDisplayText] = useState("");
   const [isDeleting, setIsDeleting] = useState(false);
   const [index, setIndex] = useState(0);
@@ -17,9 +11,7 @@ function Typewriter({
     const handleTyping = () => {
       if (!isDeleting) {
         if (displayText.length < text[index].length) {
-          setDisplayText(
-            (prev) => prev + text[index].charAt(displayText.length)
-          );
+          setDisplayText((prev) => prev + text[index].charAt(displayText.length));
         } else {
           setTimeout(() => setIsDeleting(true), duration);
         }
@@ -33,32 +25,20 @@ function Typewriter({
       }
     };
 
-    const timeout = setTimeout(
-      handleTyping,
-      isDeleting ? deletingSpeed : typingSpeed
-    );
-    return clearTimeout();
-  }, [
-    displayText,
-    isDeleting,
-    index,
-    text,
-    typingSpeed,
-    deletingSpeed,
-    duration
-  ]);
+    const timeout = setTimeout(handleTyping, isDeleting ? deletingSpeed : typingSpeed);
+    return () => clearTimeout(timeout);
+  }, [displayText, isDeleting, index, text, typingSpeed, deletingSpeed, duration]);
+
   return (
-    <div className="home">
+    <div className="typewriter">
       <div className="typing-effect">
-        <span className="const-text">Hi There!</span>
-        <br></br>
-        <span className="const-text">I'm Abhay Raj</span>
-        <br></br>
-        {displayText}
-        <span className="caret">|</span>
+        <h1 className="const-text">Hi There!</h1>
+        <h1 className="const-text">I'm Abhay Raj</h1>
+        <span className="displaying-text">{displayText}<span className="caret">|</span></span> 
+        
       </div>
-      <div >
-        <img className="home-img1"src={myimage} alt="Sample image"/>
+      <div>
+        <img className="home-img1" src={myimage} alt="Sample image" />
       </div>
     </div>
   );

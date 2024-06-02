@@ -9,7 +9,6 @@ const HomePage = () => {
       <div className="sections">
         <Navbar />
         <Typewriter
-          className="typewriter"
           text={[
             "Software Developer",
             "MERN Stack Developer",
@@ -19,9 +18,8 @@ const HomePage = () => {
           ]}
           typingSpeed={100}
           deletingSpeed={50}
-          duration={1000}
+          duration={1000} 
         />
-        
       </div>
     </div>
   );

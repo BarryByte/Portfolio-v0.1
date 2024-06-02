@@ -2,6 +2,9 @@ nav {
   display: flex;
   justify-content: space-between;
 }
+.navbar-parent{
+  background-color: #002379;
+}
 nav span {
   display: flex;
   justify-content: center;
@@ -72,3 +75,8 @@ nav span {
 .resume::before {
   content: url('/src/assets/icons/lab_profile_24dp_FILL0_wght400_GRAD0_opsz24.svg');
 }
+
+.contact::before {
+  content: url("/src/assets/icons/contactmail.svg");
+}
+

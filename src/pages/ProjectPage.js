@@ -29,6 +29,7 @@ const ProjectPage = () => {
           //   lineHeight: '1.5'
           // };
         />
+        
         <Banner/>
         <ProgressBar percentage={0}/>
     </div>
