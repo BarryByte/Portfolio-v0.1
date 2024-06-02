@@ -7,8 +7,8 @@ const ResumePage = () => {
     <div>
       <Navbar />
       <div className="resume-container">
-        <h1>Resume Page</h1>
-        <p>Welcome to the Resume Page</p>
+        {/* <h1>Resume Page</h1>
+        <p>Welcome to the Resume Page</p> */}
         <iframe
           className="resume-iframe"
           src="https://drive.google.com/file/d/1KNVQ0tIzSKkHwnRiesZhVm_KMeGacP8U/preview"

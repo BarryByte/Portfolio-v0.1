@@ -3,7 +3,16 @@ nav {
   justify-content: space-between;
 }
 .navbar-parent{
-  background-color: #002379;
+  background-color: #3AA6B9;
+}
+.initial{
+  color: #FF5F00;
+  border-radius: 15px; 
+  font-weight: 900;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  
+  justify-content: space-between; 
+  align-items: center;
 }
 nav span {
   display: flex;

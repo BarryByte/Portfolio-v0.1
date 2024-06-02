@@ -1,7 +1,7 @@
-/* Include Google Fonts */
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400&display=swap');
 
-/* General reset and styling */
+
 body, html, #root {
     margin: 0;
     padding: 0;
@@ -22,7 +22,7 @@ body, html, #root {
 
 .resume-iframe {
     width: 100%;
-    height: calc(100vh - 160px); /* Adjust based on header and padding */
+    height: calc(100vh - 160px); 
     border: none;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
@@ -30,18 +30,17 @@ body, html, #root {
 }
 
 h1 {
-    font-family: 'Montserrat', sans-serif; /* Changed font to Montserrat */
+    font-family: 'Montserrat', sans-serif; 
     font-size: 2.5rem;
-    color: #4a90e2; /* Light blue color */
+    color: #4a90e2;
     margin-bottom: 10px;
     text-transform: uppercase;
     letter-spacing: 2px;
 }
 
 p {
-    font-family: 'Open Sans', sans-serif; /* Changed font to Open Sans */
-    font-size: 1.2rem;
-    color: #333; /* Darker color for better readability */
+    font-family: 'Open Sans', sans-serif; 
+    color: #333;
     margin-bottom: 10px;
     line-height: 1.6;
     max-width: 800px;

@@ -1,53 +1,11 @@
-/* .img-profile {
-  height: 400px;
-  width: 400px;
-}
 
-.aboutContentBox {
-  display: flex;
-  padding: 0 15% 5% 15%;
-  gap: 5%;
-}
-
-.brief-intro {
-  display: flex;
-  padding: 20% 15% 15% 15%;
-  gap: 5%;
-}
-
-.brief-title {
-  font-family: "Source Code Pro", monospace;
-  font-optical-sizing: auto;
-  font-weight: 800;
-  font-style: normal;
-  font-size: 2.5rem;
-  color: aquamarine;
-}
-
-.brief-para {
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  
-}
-.about-section-1{
-  padding: 10%;
-} */
-
-/* Reset some default styles for better consistency */
-/* body, ul {
-  margin: 0;
-  padding: 0;
-} */
-
-/* General styles for the section */
 .about-section-1 {
   padding: 10%;
   background: #FFFAE6;
   font-family: 'Poppins', sans-serif;
 }
 
-/* Styles for the main content box */
+
 .aboutContentBox {
   display: flex;
   padding: 0 15% 5% 15%;
@@ -60,7 +18,7 @@
   animation: fadeIn 1.5s ease-in;
 }
 
-/* Styles for the profile images */
+
 .img-profile {
   height: 400px;
   width: 400px;
@@ -73,11 +31,11 @@
   transform: scale(1.05);
 }
 
-/* Styles for the about content */
+
 .aboutContent h1 {
   font-family: 'Source Code Pro', monospace;
   font-weight: 800;
-  font-size: 3rem;
+  font-size: 2rem;
   color: #3498db;
   margin-bottom: 20px;
 }
@@ -93,10 +51,10 @@
   font-weight: 600;
 }
 
-/* Styles for the brief intro section */
+
 .brief-intro {
   display: flex;
-  margin: 15% 0% 0% 0%;
+  margin: 0% 0% 0% 0%;
   padding: 1.2% 15% 5% 15%;
   gap: 5%;
   align-items: center;
@@ -111,7 +69,7 @@
   font-family: 'Source Code Pro', monospace;
   font-weight: 800;
   font-size: 2.5rem;
-  color: aquamarine;
+  color: #002379;
   margin-bottom: 20px;
 }
 
@@ -121,7 +79,7 @@
   line-height: 1.5;
 }
 
-/* Keyframes for fade-in animation */
+
 @keyframes fadeIn {
   from {
       opacity: 0;

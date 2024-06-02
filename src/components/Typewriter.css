@@ -23,9 +23,21 @@
 }
 
 .displaying-text {
-  color: #ff8c00; /* Change to your desired color */
+  color: #ff8c00; 
 }
 
-.caret{
-  /* animating blink 0. */
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.caret {
+  animation: blink 0.5s step-start infinite;
 }

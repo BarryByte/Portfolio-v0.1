@@ -24,7 +24,7 @@ const ContactPage = () => {
             <span>Instagram Profile</span>
           </a>
           <a
-            href="mailTo:abhay.23bcs10181@ms.sst.scaler.com"target="_blank"
+            href="https://mail.google.com/mail/u/0/#inbox?compose=new"target="_blank"
             className="contact-tile"
           >
             <i className="far fa-envelope contact-icon"></i>

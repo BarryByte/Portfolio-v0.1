@@ -4,7 +4,7 @@ import React from 'react';
 function About() {
   return (
     <section id="about-section" className="about-section-1">
-      <div className="aboutContentBox">
+      {/* <div className="aboutContentBox">
         <div className="aboutContent">
           <h1> Get to know me!</h1>
           <p>
@@ -23,7 +23,7 @@ function About() {
             alt="Profile"
           />
         </div>
-      </div>
+      </div> */}
       <div className="brief-intro">
         <div className="brief-intro-text">
           <span className="brief-title">Get to know me!</span>
