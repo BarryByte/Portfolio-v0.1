@@ -2,38 +2,38 @@ import React from "react";
 import Navbar from "../components/Navbar";
 import "../components/Contact.css";
 
-const ContactPage = () => {
+function ContactPage() {
+  const openLinkedIn = () => {
+    window.open("https://www.linkedin.com/in/abhay-raj-ab0445287/", "_blank");
+  };
+
+  const openGitHub = () => {
+    window.open("https://github.com/BarryByte", "_blank");
+  };
+
+  const openEmail = () => {
+    window.location.href = "mailto:abhayraj.12667@gmail.com";
+  };
+
   return (
     <div>
       <Navbar />
-      <div className="contact-container">
+      <div className="contact-page">
         <h1>Contact Me</h1>
-        <p className="contact-description">
-          Feel free to reach out to me via the following channels:
-        </p>
-        <div className="contact-grid">
-          <a href="https://github.com/BarryByte" target="_blank" className="contact-tile">
-            <i className="fab fa-github contact-icon"></i>
-            <span>GitHub Profile</span>
-          </a>
-          <a
-            href="https://www.instagram.com/your-username"target="_blank"
-            className="contact-tile"
-          >
-            <i className="fab fa-instagram contact-icon"></i>
-            <span>Instagram Profile</span>
-          </a>
-          <a
-            href="https://mail.google.com/mail/u/0/#inbox?compose=new"target="_blank"
-            className="contact-tile"
-          >
-            <i className="far fa-envelope contact-icon"></i>
-            <span>Mail</span>
-          </a>
+        <div className="contact-buttons">
+          <button className="contact-button linkedin" onClick={openLinkedIn}>
+            LinkedIn
+          </button>
+          <button className="contact-button github" onClick={openGitHub}>
+            GitHub
+          </button>
+          <button className="contact-button email" onClick={openEmail}>
+            Email
+          </button>
         </div>
       </div>
     </div>
   );
-};
+}
 
 export default ContactPage;

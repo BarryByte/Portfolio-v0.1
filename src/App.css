@@ -7,7 +7,12 @@ body {
   -moz-osx-font-smoothing: grayscale;
   font-size: 16px;
   color: #ffffff;
-  background-color: #FFFAE6;
+  /* background-color: #FFFAE6; */
+  /* --section-background-color: linear-gradient(
+      to bottom left,
+      rgba(154, 30, 30, 0.72),
+      rgba(1, 11, 11, 1.04)
+    ); */
 }
 
 h1, h2, h3, h4, h5, h6, p {
