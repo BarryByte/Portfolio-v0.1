@@ -11,7 +11,7 @@ const ResumePage = () => {
         <p>Welcome to the Resume Page</p> */}
         <iframe
           className="resume-iframe"
-          src="https://drive.google.com/file/d/1KNVQ0tIzSKkHwnRiesZhVm_KMeGacP8U/preview"
+          src="https://drive.google.com/file/d/1HdqthYN3x_93WHRRPb2dtiE0Mvk9ZKj8/preview"
           title="Resume"
           frameBorder="0"
           scrolling="auto"
