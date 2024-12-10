@@ -4,9 +4,9 @@ import { MessageSquareText } from 'lucide-react';
 const Home = () => {
   const [typedText, setTypedText] = useState('');
   const phrases = [
-    "I'm a developer",
-    "I'm a coder",
-    "I'm an engineer"
+    "I'm a developer.",
+    "I'm a coder.",
+    "I'm an engineer."
   ];
   const [currentPhraseIndex, setCurrentPhraseIndex] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
@@ -44,7 +44,7 @@ const Home = () => {
             text-transparent bg-clip-text
             bg-gradient-to-r from-neon-cyan to-neon-magenta
             animate-pulse'>
-            Abhay Raj
+            Hello
           </h1>
           <div className='flex items-center justify-center space-x-2'>
             <MessageSquareText
