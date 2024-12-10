@@ -14,8 +14,8 @@ const Home = () => {
   useEffect(() => {
     const handleTyping = () => {
       const currentPhrase = phrases[currentPhraseIndex];
-      const typingSpeed = isDeleting ? 50 : 100;
-      const deleteSpeed = 50;
+      // const typingSpeed = isDeleting ? 50 : 100;
+      // const deleteSpeed = 50;
 
       if (!isDeleting && typedText.length < currentPhrase.length) {
         setTypedText(currentPhrase.slice(0, typedText.length + 1));
