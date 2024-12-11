@@ -6,45 +6,79 @@ const Projects = () => {
 
   const projects = [
     {
-      title: 'E-Commerce Platform',
-      description: 'Full-stack e-commerce application with real-time inventory management',
-      technologies: ['React', 'Node.js', 'MongoDB', 'Redux'],
-      githubLink: 'https://github.com/username/ecommerce-project',
-      liveLink: 'https://example-ecommerce.vercel.app',
-      category: 'fullstack'
+      title: 'Portfolio',
+      description: 'Responsive and interactive portfolio website showcasing projects, skills, and achievements. Integrated APIs to display real-time stats from GitHub, LeetCode, and Codeforces profiles.',
+      technologies: ['React', 'Tailwind CSS'],
+      githubLink: 'https://github.com/BarryByte/Portfolio-v0.1', 
+      liveLink: 'https://portfolio-v0-1-tus8.vercel.app/',
+      category: 'frontend',
     },
     {
-      title: 'AI Chatbot',
-      description: 'Machine learning powered chatbot with natural language processing',
-      technologies: ['Python', 'TensorFlow', 'Flask', 'React'],
-      githubLink: 'https://github.com/username/ai-chatbot',
-      liveLink: 'https://ai-chatbot-demo.vercel.app',
-      category: 'ai'
+      title: 'Youtube Clone',
+      description: 'YouTube Clone built using React with features like video browsing, trending content exploration, and a comment section. Integrated video embedding for seamless playback and designed an intuitive interface replicating YouTube’s core functionalities.',
+      technologies: ['React', 'CSS'],
+      githubLink: 'https://github.com/BarryByte/youtube-clone',
+      liveLink: 'https://youtube-clone-plum-beta.vercel.app/',
+      category: 'frontend',
     },
     {
-      title: 'Weather Forecast App',
-      description: 'Real-time weather tracking with predictive analytics',
-      technologies: ['React', 'OpenWeatherAPI', 'Tailwind CSS'],
-      githubLink: 'https://github.com/username/weather-app',
-      liveLink: 'https://weather-forecast-app.vercel.app',
-      category: 'frontend'
+      title: 'Simplified Hotel Booking Chatbot',
+      description: 'RESTful API implemented using Express.js to create a chatbot for handling hotel booking queries. Integrated Gemini API for NLP, and SQLite with Sequelize for conversation history storage. Included functions for fetching room data and simulating room bookings.',
+      technologies: ['Express.js', 'SQLite', 'Sequelize', 'Gemini API'],
+      githubLink: 'https://github.com/BarryByte/Bot9---Ben10',
+      liveLink: 'https://main.d2kvnf7sqmud7t.amplifyapp.com/',
+      category: 'backend',
     },
     {
-      title: 'Blockchain Voting System',
-      description: 'Decentralized voting platform ensuring transparency and security',
-      technologies: ['Solidity', 'Web3.js', 'React', 'Ethereum'],
-      githubLink: 'https://github.com/username/voting-blockchain',
-      liveLink: 'https://blockchain-voting.vercel.app',
-      category: 'blockchain'
-    }
+      title: 'Music Store Management System',
+      description: 'Comprehensive system for managing a music store, including handling product inventory, customer profiles, sales transactions, and employee management. Features CRUD operations for musical products, customers, sales, and staff.',
+      technologies: ['JavaScript', 'Node.js', 'MongoDB'],
+      githubLink: 'https://github.com/BarryByte/MusicStoreManagement',
+      liveLink: '',
+      category: '',
+    },
+    {
+      title: 'Quick-Quiz',
+      description: 'Interactive web application for testing knowledge on various topics. Features dynamic question loading, responsive design, real-time feedback, and score tracking. Built to enhance front-end development and UX skills.',
+      technologies: ['HTML', 'CSS', 'JavaScript'],
+      githubLink: 'https://github.com/BarryByte/Quick-Quiz',
+      liveLink: '',
+      category: 'frontend',
+    },
+    {
+      title: 'Tic-Tac-Toe',
+      description: 'Classic Tic-Tac-Toe game implemented using Java and Object-Oriented Programming (OOP) principles. Allows two players to play on a 3x3 grid with standard rules to win by forming a horizontal, vertical, or diagonal line.',
+      technologies: ['Java', 'OOP'],
+      githubLink: 'https://github.com/BarryByte/Tic-Tac-Toe',
+      liveLink: '',
+      category: 'game',
+    },
+    {
+      title: 'Pokedox-Clock',
+      description: 'Dynamic analog clock developed using HTML, CSS, and JavaScript. Features real-time updates, visually appealing design, and user controls to pause and resume the clock hands.',
+      technologies: ['HTML', 'CSS', 'JavaScript'],
+      githubLink: 'https://github.com/BarryByte/Pokedex/tree/main/clock_example',
+      liveLink: '',
+      category: 'frontend',
+    },
+    {
+      title: 'REST APIs for Video Files',
+      description: 'Video processing platform using Node.js, Express, SQLite, and Cloudinary. Features include video uploading, trimming, merging, and generating time-limited download links. Utilized FFmpeg for video processing and Cloudinary for efficient storage.',
+      technologies: ['Node.js', 'Express', 'SQLite', 'Cloudinary', 'FFmpeg'],
+      githubLink: 'https://github.com/BarryByte/REST-APIs-for-Video-Files',
+      liveLink: '',
+      category: 'backend',
+    },
   ];
+
+
 
   const categories = [
     { name: 'all', label: 'All Projects', icon: <Layers className="mr-2" /> },
-    { name: 'fullstack', label: 'Full Stack', icon: <Code className="mr-2" /> },
-    { name: 'frontend', label: 'Frontend', icon: <ExternalLink className="mr-2" /> },
-    { name: 'ai', label: 'AI Projects', icon: <Code className="mr-2" /> },
-    { name: 'blockchain', label: 'Blockchain', icon: <Layers className="mr-2" /> }
+    // { name: 'fullstack', label: 'Full Stack', icon: <Code className="mr-2" /> },
+    // { name: 'frontend', label: 'Frontend', icon: <ExternalLink className="mr-2" /> },
+    // { name: 'ai', label: 'AI Projects', icon: <Code className="mr-2" /> },
+
   ];
 
   const filteredProjects = selectedCategory === 'all'

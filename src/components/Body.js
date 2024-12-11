@@ -3,6 +3,7 @@ import Header from './Header'
 import Sidebar from './Sidebar'
 import Home from "./Home"
 import ContactPage from './ContactPage'
+import Projects from './Projects'
 
 const Body = () => {
   return (
@@ -10,6 +11,7 @@ const Body = () => {
       <Header/>
       <Sidebar/>
       <Home/>
+      <Projects/>
       <ContactPage/>
 
     </div>
